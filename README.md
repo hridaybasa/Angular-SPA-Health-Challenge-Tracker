@@ -20,12 +20,12 @@ Clone the repository and navigate into the project directory:
 git clone https://github.com/hridaybasa/Angular-SPA-Health-Challenge-Tracker.git
 cd Angular-SPA-Health-Challenge-Tracker
 npm install
-
+```
 To run the application locally:
 ```bash
 ng serve
-
+```
 To build the application for production:
 ```bash
 ng build --prod
-
+```
