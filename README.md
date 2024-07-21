@@ -25,7 +25,7 @@ To run the application locally:
 ```bash
 ng serve
 
-"To build the application for production:"
+To build the application for production:
 ```bash
 ng build --prod
 
