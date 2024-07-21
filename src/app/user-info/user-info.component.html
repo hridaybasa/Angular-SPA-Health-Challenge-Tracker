@@ -1,0 +1,79 @@
+<div
+  class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12"
+>
+  <img
+    src="beams.jpg"
+    alt=""
+    class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2"
+    width="1308"
+  />
+  <div
+    class="relative bg-white px-10 pt-5 pb-8 shadow-2xl sm:mx-auto sm:rounded-3xl"
+  >
+    <div class="mx-auto">
+      <div class="divide-y divide-gray-300/50">
+        <div
+          class="flex w-100% px-15 justify-center space-y-5 py-8 text-2xl text-black"
+        >
+          <h1 class="font-bold">Health Challenge Tracker</h1>
+        </div>
+        <div class="flex flex-col sm:mx-auto pt-8">
+          <label> User Name*</label>
+          <input
+            [(ngModel)]="userName"
+            type="text"
+            id="userName"
+            placeholder="Enter User Name"
+            class="appearance-none px-3 py-1.5 text-base font-normal text-gray-700 bg-white rounded shadow-sm sm:text-sm border border-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          />
+        </div>
+        <div class="flex flex-col sm:mx-auto pt-8">
+          <label for="workoutType">Workout Type* </label>
+          <select
+            [(ngModel)]="workoutType"
+            name="workoutType"
+            id="workoutType"
+            class="form-select appearance-none px-3 py-1.5 text-base font-normal text-gray-700 bg-white rounded shadow-sm sm:text-sm border border-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >
+            <option value="cycling">Cycling</option>
+            <option value="running">Running</option>
+            <option value="swimming">Swimming</option>
+            <option value="yoga">Yoga</option>
+          </select>
+        </div>
+        <div class="flex flex-col sm:mx-auto pt-8">
+          <label> Workout Duration*</label>
+          <input
+            [(ngModel)]="workoutDuration"
+            type="number"
+            id="workoutDuration"
+            placeholder="Enter Duration in Minutes"
+            class="appearance-none px-3 py-1.5 text-base font-normal text-gray-700 bg-white rounded shadow-sm sm:text-sm border border-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          />
+        </div>
+        <div class="flex flex-row sm:mx-auto pt-8 justify-evenly gap-2">
+          <button
+            (click)="addWorkout()"
+            class="border-2 p-3 rounded-lg hover:bg-blue-500 hover:text-white"
+          >
+            Add Workout
+          </button>
+          <button
+            (click)="goToWorkoutDetails()"
+            class="border-2 p-3 rounded-lg hover:bg-blue-500 hover:text-white"
+          >
+            Workout Details
+          </button>
+        </div>
+        <div class="flex flex-row justify-center pt-4">
+          <button
+            (click)="resetLocalStorage()"
+            class="border-2 p-3 rounded-lg hover:bg-red-600 hover:text-white"
+          >
+            Reset Storage
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
