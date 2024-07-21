@@ -17,8 +17,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Clone the repository and navigate into the project directory:
 ```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+git clone https://github.com/hridaybasa/Angular-SPA-Health-Challenge-Tracker.git
+cd Angular-SPA-Health-Challenge-Tracker
 npm install
 
 To run the application locally:
