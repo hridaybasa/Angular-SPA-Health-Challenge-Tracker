@@ -1,4 +1,3 @@
-
 # 1stAngularProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
@@ -15,3 +14,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## This is a simple Single Page Application (SPA) built with Angular. It includes features such as user input for workouts, a list of workouts with filtering, and pagination functionalities.
 
 ## Installation
+
+Clone the repository and navigate into the project directory:
+```bash
+git clone https://github.com/<your-username>/<your-repo-name>.git
+cd <your-repo-name>
+npm install
+
+To run the application locally:
+```bash
+ng serve
+
+To build the application for production:
+```bash
+ng build --prod
+
